@@ -1,0 +1,29 @@
+{
+    "name": "finance",
+    "description": "Финансовое тестовое задание",
+    "version": "1.0.0",
+    "type": "project",
+    "time": "2017-12-01",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Сергей Казарин",
+            "email": "mechmskv@yandex.ru",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "www/app"
+        }
+    },
+     "config": {
+        "vendor-dir": "www/lib"
+    },
+    "scripts": {
+        
+    },
+    "require": {
+        "abeautifulsite/simpleimage": "^2.6"
+    }
+}

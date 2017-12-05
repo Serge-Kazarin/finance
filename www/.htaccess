@@ -1,0 +1,10 @@
+
+php_flag short_open_tag on
+Require all granted
+
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME}/index.html !-f
+RewriteCond %{SCRIPT_FILENAME}/index.xml !-f
+RewriteCond %{SCRIPT_FILENAME}/index.php !-f
+RewriteRule ^(.*)$ index.php/$1 [QSA,L]
