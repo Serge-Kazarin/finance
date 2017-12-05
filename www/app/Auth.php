@@ -9,7 +9,7 @@ class Auth
 	{
 		if( !static::isAuthorized() ) return false;
 		
-		return AR::get( $_SESSION, 'user' );
+		return Arr::get( $_SESSION, 'user' );
 	}
 	
 	public static function isAuthorized()
@@ -20,12 +20,14 @@ class Auth
 	
 	public static function login( $login, $pass )
 	{
-		$model = new Model();
-		$user = $model->getUser( $login, $pass );
+		$user = Model::getUser( $login, $pass );
 		
 		if( $user )
 		{
 			$_SESSION['user'] = $user;
+			
+			Log::i()->info("User signed in");
+			
 			return true;
 		}
 		
@@ -36,9 +38,11 @@ class Auth
 	{
 		session_unset();
 		session_destroy();
+		
+		Log::i()->info("User signed out");
 	}
 	
-	public static function session_start()
+	public static function init()
 	{
 		session_start();
 	}

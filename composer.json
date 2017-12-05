@@ -24,6 +24,6 @@
         
     },
     "require": {
-        "abeautifulsite/simpleimage": "^2.6"
+        "monolog/monolog": "^1.23"
     }
 }

@@ -5,11 +5,11 @@ use app\dashboard\Controller;
 
 class Router
 {
-	public static function go()
+	public static function run()
 	{
 		$uri = $_SERVER['REQUEST_URI'];
 		$url = parse_url($uri);
-		$path = AR::get( $url, 'path' );
+		$path = Arr::get( $url, 'path' );
 		$path = str_replace('/', '', $path);
 		
 		$controller = new Controller();

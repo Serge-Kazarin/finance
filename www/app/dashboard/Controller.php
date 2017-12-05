@@ -1,7 +1,7 @@
 <?
 namespace app\dashboard;
 
-use app\AR;
+use app\Arr;
 use app\Auth;
 
 class Controller
@@ -11,26 +11,24 @@ class Controller
 		$view = new View();
 		$userSession = Auth::getUser();
 		
-		$model = new Model();
 		if( $userSession )
 		{
-			$login = AR::get( $userSession, 'login' );
-			$userDb = Model::doGetUser( $login );
+			$login = Arr::get( $userSession, 'login' );
+			$userDb = Model::getUserInfo( $login );
 			$view->renderDashboard( $userDb );
 		}
 		else
 		{
-			$status = AR::get( $_GET, 'status' );
+			$status = Arr::get( $_GET, 'status' );
 			$view->renderLogin( $status );
 		}
 	}
 	
 	public function expend()
 	{	
-		$amount = AR::get( $_POST, 'amount' );
+		$amount = Arr::get( $_POST, 'amount' );
 		$amount = floatval($amount);
-		$model = new Model();
-		$result = $model->expend( $amount );
+		$result = Model::expend( $amount );
 		
 		$view = new View();
 		$view->redirect( "/" );
@@ -39,8 +37,8 @@ class Controller
 	public function login()
 	{
 		
-		$login = AR::get( $_POST, 'login' );
-		$pass = AR::get( $_POST, 'pass' );
+		$login = Arr::get( $_POST, 'login' );
+		$pass = Arr::get( $_POST, 'pass' );
 		
 		$result = Auth::login( $login, $pass );
 		

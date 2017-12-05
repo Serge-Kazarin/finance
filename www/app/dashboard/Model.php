@@ -1,7 +1,7 @@
 <?
 namespace app\dashboard;
 
-use app\AR;
+use app\Arr;
 use app\Auth;
 use Exception;
 use PDO;
@@ -18,11 +18,11 @@ class Model
 	{
 		$hash = static::hash( $password );
 		
-		$data = static::doGetUser( $login );
+		$data = static::getUserInfo( $login );
 		
-		$dbLogin = AR::get( $data, 'Login' );
-		$dbBalance = AR::get( $data, 'Balance' );
-		$dbPass = AR::get( $data, 'Pass' );
+		$dbLogin = Arr::get( $data, 'Login' );
+		$dbBalance = Arr::get( $data, 'Balance' );
+		$dbPass = Arr::get( $data, 'Pass' );
 		
 		if(password_verify( $password, $dbPass) )
 		{
@@ -37,7 +37,7 @@ class Model
 
 	}
 	
-	public static function doGetUser( $login )
+	public static function getUserInfo( $login )
 	{
 		$conn = static::getConnection();
 		$stmt = $conn->prepare( "SELECT Id, Login, Pass, Balance FROM O_User where Login=:Login" );
@@ -89,7 +89,7 @@ class Model
 		return static::$conn;
 	}
 	
-	public function expend( $amount )
+	public static function expend( $amount )
 	{
 		$conn = static::getConnection();
 		$r = false;
@@ -99,11 +99,11 @@ class Model
 			$conn->beginTransaction();
 			
 			$user = Auth::getUser();
-			$login = AR::get( $user, 'login' );
-			$data = static::doGetUser( $login );
-			$id = AR::get( $data, 'Id' );
+			$login = Arr::get( $user, 'login' );
+			$data = static::getUserInfo( $login );
+			$id = Arr::get( $data, 'Id' );
 
-			$balance = AR::get( $data, 'Balance' );
+			$balance = Arr::get( $data, 'Balance' );
 			$balance = floatval($balance);
 
 			$result = static::doExpend( $id, $balance, $amount );

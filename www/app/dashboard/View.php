@@ -1,7 +1,7 @@
 <?
 namespace app\dashboard;
 
-use app\AR;
+use app\Arr;
 
 
 class View
@@ -52,8 +52,8 @@ class View
 	{
 		static::renderHeader( 'Dashboard' );
 		
-		$login = AR::get( $user, 'Login' );
-		$balance = AR::get( $user, 'Balance' );
+		$login = Arr::get( $user, 'Login' );
+		$balance = Arr::get( $user, 'Balance' );
 ?>
 		<div>
 			<?= $login ?>,&nbsp;<strong><?=$balance?></strong>&nbsp;$

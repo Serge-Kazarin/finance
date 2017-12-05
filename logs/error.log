@@ -1,0 +1,80 @@
+[Tue Dec 05 11:23:57.207294 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:23:57.207340 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:23:57.207352 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:23:57.207358 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:23:57.376569 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:23:57.376598 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:23:57.376609 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:23:57.376616 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:23:58.777126 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:23:58.777166 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:23:58.777181 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:23:58.777190 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:23:58.781963 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:23:58.781998 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:23:58.782012 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:23:58.782020 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:23:58.828146 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:23:58.828183 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:23:58.828195 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:23:58.828202 2017] [:error] [pid 3602] [client 127.0.0.1:49688] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:25:04.509044 2017] [:error] [pid 4836] [client 127.0.0.1:49712] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:25:04.509113 2017] [:error] [pid 4836] [client 127.0.0.1:49712] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:25:04.509126 2017] [:error] [pid 4836] [client 127.0.0.1:49712] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:25:04.509133 2017] [:error] [pid 4836] [client 127.0.0.1:49712] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:25:04.587848 2017] [:error] [pid 4836] [client 127.0.0.1:49712] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:25:04.587894 2017] [:error] [pid 4836] [client 127.0.0.1:49712] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:25:04.587907 2017] [:error] [pid 4836] [client 127.0.0.1:49712] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:25:04.587914 2017] [:error] [pid 4836] [client 127.0.0.1:49712] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:25:14.541016 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:25:14.541070 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:25:14.541084 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:25:14.541092 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:25:15.214729 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:25:15.214760 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:25:15.214768 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:25:15.214774 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:25:15.288729 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:25:15.288761 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:25:15.288773 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:25:15.288781 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:25:17.216835 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:25:17.216893 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:25:17.216917 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:25:17.216932 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:25:17.225023 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:25:17.225105 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:25:17.225155 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:25:17.225186 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:25:17.284113 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16, referer: http://finance/
+[Tue Dec 05 11:25:17.284161 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:25:17.284176 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:25:17.284186 2017] [:error] [pid 3605] [client 127.0.0.1:49722] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:27:44.916967 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 17, referer: http://finance/
+[Tue Dec 05 11:27:44.917023 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:27:44.917037 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:27:44.917044 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:27:45.590395 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 17, referer: http://finance/
+[Tue Dec 05 11:27:45.590429 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:27:45.590441 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:27:45.590450 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:27:45.728907 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 17, referer: http://finance/
+[Tue Dec 05 11:27:45.728935 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:27:45.728948 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:27:45.728956 2017] [:error] [pid 4833] [client 127.0.0.1:49744] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:27:52.632892 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 17, referer: http://finance/
+[Tue Dec 05 11:27:52.632933 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:27:52.632949 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:27:52.632958 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:27:52.642883 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 17, referer: http://finance/
+[Tue Dec 05 11:27:52.642926 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:27:52.642958 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:27:52.642973 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:27:52.704332 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 17, referer: http://finance/
+[Tue Dec 05 11:27:52.704360 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP Stack trace:, referer: http://finance/
+[Tue Dec 05 11:27:52.704382 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP   1. {main}() /home/sk/p/finance/www/index.php:0, referer: http://finance/
+[Tue Dec 05 11:27:52.704390 2017] [:error] [pid 4837] [client 127.0.0.1:49756] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10, referer: http://finance/
+[Tue Dec 05 11:39:22.368251 2017] [:error] [pid 4838] [client 127.0.0.1:49774] PHP Notice:  Use of undefined constant LOG_PATH - assumed 'LOG_PATH' in /home/sk/p/finance/www/app/Log.php on line 16
+[Tue Dec 05 11:39:22.368310 2017] [:error] [pid 4838] [client 127.0.0.1:49774] PHP Stack trace:
+[Tue Dec 05 11:39:22.368322 2017] [:error] [pid 4838] [client 127.0.0.1:49774] PHP   1. {main}() /home/sk/p/finance/www/index.php:0
+[Tue Dec 05 11:39:22.368329 2017] [:error] [pid 4838] [client 127.0.0.1:49774] PHP   2. app\\Log::init() /home/sk/p/finance/www/index.php:10
