@@ -27,7 +27,7 @@ class View
 <?
 	}
 	
-	public function renderLogin( $status = '')
+	public static function renderLogin( $status = '')
 	{
 		static::renderHeader( 'Login' );
 ?>
@@ -48,7 +48,7 @@ class View
 	}
 	
 	
-	public function renderDashboard( $user )
+	public static function renderDashboard( $user )
 	{
 		static::renderHeader( 'Dashboard' );
 		
@@ -69,7 +69,7 @@ class View
 	}
 	
 	
-	public function redirect( $url )
+	public static function redirect( $url )
 	{
 		header("Location: $url");
 		exit();

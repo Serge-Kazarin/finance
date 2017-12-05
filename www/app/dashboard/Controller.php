@@ -3,24 +3,24 @@ namespace app\dashboard;
 
 use app\Arr;
 use app\Auth;
+use app\User;
 
 class Controller
 {
 	public function index()
 	{
-		$view = new View();
 		$userSession = Auth::getUser();
 		
 		if( $userSession )
 		{
 			$login = Arr::get( $userSession, 'login' );
-			$userDb = Model::getUserInfo( $login );
-			$view->renderDashboard( $userDb );
+			$userDb = User::getInfo( $login );
+			View::renderDashboard( $userDb );
 		}
 		else
 		{
 			$status = Arr::get( $_GET, 'status' );
-			$view->renderLogin( $status );
+			View::renderLogin( $status );
 		}
 	}
 	
@@ -30,8 +30,7 @@ class Controller
 		$amount = floatval($amount);
 		$result = Model::expend( $amount );
 		
-		$view = new View();
-		$view->redirect( "/" );
+		View::redirect( "/" );
 	}
 	
 	public function login()
@@ -40,18 +39,22 @@ class Controller
 		$login = Arr::get( $_POST, 'login' );
 		$pass = Arr::get( $_POST, 'pass' );
 		
+		$login = strip_tags($login);
+		$login = htmlspecialchars($login);
+		
+		$pass = strip_tags($pass);
+		$pass = htmlspecialchars($pass);
+		
 		$result = Auth::login( $login, $pass );
 		
-		$view = new View();
-		if( !$result ) $view->redirect( "/?status=err" );
-		else $view->redirect( "/" );
+		if( !$result ) View::redirect( "/?status=err" );
+		else View::redirect( "/" );
 	}
 	
 	public function logout()
 	{
 		Auth::logout();
-		$view = new View();
-		$view->redirect('/');
+		View::redirect('/');
 	}
 	
 }

@@ -1,8 +1,6 @@
 <?
 namespace app;
 
-use app\dashboard\Model;
-
 class Auth
 {
 	public static function getUser()
@@ -12,15 +10,9 @@ class Auth
 		return Arr::get( $_SESSION, 'user' );
 	}
 	
-	public static function isAuthorized()
-	{
-		if( isset($_SESSION['user']) ) return true;
-		return false;
-	}
-	
 	public static function login( $login, $pass )
 	{
-		$user = Model::getUser( $login, $pass );
+		$user = static::checkUser( $login, $pass );
 		
 		if( $user )
 		{
@@ -37,7 +29,7 @@ class Auth
 	public static function logout()
 	{
 		session_unset();
-		session_destroy();
+		session_write_close();
 		
 		Log::i()->info("User signed out");
 	}
@@ -45,6 +37,31 @@ class Auth
 	public static function init()
 	{
 		session_start();
+	}
+	
+	protected static function checkUser( $login, $password )
+	{
+		$data = User::getInfo( $login );
+		
+		$dbLogin = Arr::get( $data, 'Login' );
+		$dbPass = Arr::get( $data, 'Pass' );
+		
+		if(password_verify( $password, $dbPass) )
+		{
+			return 
+			[
+				'login' => $dbLogin
+			];
+		}
+		
+		return false;
+
+	}
+	
+	protected static function isAuthorized()
+	{
+		if( isset($_SESSION['user']) ) return true;
+		return false;
 	}
 }
 
